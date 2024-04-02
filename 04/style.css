@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    background-color:black;
+    padding: 5px;
+}
+
+.breukh{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: 2px solid;
+    padding: 5px;
+    color: goldenrod;
+}
+
+/* ANIMATION */
+
+.box{
+    margin-top: 200px;
+    margin-left: 200px;
+    background-color: firebrick;
+    height: 150px;
+    width: 150px;
+}
+
+.box:hover{
+    animation-name: hover-animation;
+    animation-duration: 2s;
+    /* animation-delay: 1s; */
+    /* animation-delay: -1s; */
+}
+
+@keyframes hover-animation {
+    45%{
+        border-radius: 50%;
+    }
+
+    100%{
+        transform: rotate(180deg) scale(2);
+        background-color: yellowgreen;
+    }
+}

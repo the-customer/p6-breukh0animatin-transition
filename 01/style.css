@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    background-color:goldenrod;
+    padding: 5px;
+}
+
+.breukh{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: 2px solid;
+    padding: 5px;
+    color: darkred;
+}
+
+/* ANIMATION */
+.box{
+    margin-top: 50px;
+    width: 150px;
+    height: 150px;
+    background-color:yellowgreen;
+    border: 2px solid green;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: boxAnimation 1s infinite;
+
+}
+
+@keyframes boxAnimation {
+    from{
+        transform: translate(0);
+    }
+    43%{
+        border-radius: 50%;
+        border:2px solid darkred;
+    }
+    to{
+        transform: translate(500px) rotate(90deg);
+    }
+}

@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    background-color:black;
+    padding: 5px;
+}
+
+.breukh{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: 2px solid;
+    padding: 5px;
+    color: goldenrod;
+}
+
+/* ANIMATION */
+.border{
+    margin-top: 100px;
+    padding: 5px;
+    width: 610px;
+    border: 2px solid sienna;
+}
+.box{
+    background-color: orangered;
+    height: 50px;
+    width: 1px;
+    animation: load-animation 3s infinite;
+}
+
+@keyframes load-animation {
+    0%{
+        width: 1px;
+    }
+    50%{
+        background-color: goldenrod;
+    }
+    100%{
+        width: 100%;
+        background-color: darkgreen;
+    }
+
+
+}
